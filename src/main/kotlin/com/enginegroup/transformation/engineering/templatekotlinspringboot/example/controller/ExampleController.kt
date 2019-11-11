@@ -1,6 +1,6 @@
-package com.enginegroup.transformation.engineering.templatekotlinspringboot.controller
+package com.enginegroup.transformation.engineering.templatekotlinspringboot.example.controller
 
-import com.enginegroup.transformation.engineering.templatekotlinspringboot.model.Example
+import com.enginegroup.transformation.engineering.templatekotlinspringboot.example.dto.ExampleResult
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestParam
 import org.springframework.web.bind.annotation.RestController
@@ -13,6 +13,6 @@ class ExampleController {
 
     @GetMapping("/")
     fun greeting(@RequestParam(value = "name", defaultValue = "World") name: String) =
-            Example(counter.incrementAndGet(), "Hello, $name")
+            ExampleResult(counter.incrementAndGet(), "Hello, $name")
 
 }

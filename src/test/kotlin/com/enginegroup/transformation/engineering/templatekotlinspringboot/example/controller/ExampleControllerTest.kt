@@ -1,4 +1,4 @@
-package com.enginegroup.transformation.engineering.templatekotlinspringboot.controller
+package com.enginegroup.transformation.engineering.templatekotlinspringboot.example.controller
 
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Nested
